@@ -1,0 +1,8 @@
+<ui:UXML xmlns:gr="Graphene.Elements" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+  <gr:SelectField focusable="true" label="SelectField" binding-path="Value" item-height="32">
+    <Style src="/Packages/com.graphene.components/Static/Styles/Tailwind.uss" />
+    <Style src="/Packages/com.graphene.components/Static/Styles/Globals.uss" />
+    <Style src="/Packages/com.graphene.components/Static/Styles/Typography.uss" />
+    <Style src="/Packages/com.graphene.components/Static/Styles/Gr_Components.uss" />
+  </gr:SelectField>
+</ui:UXML>

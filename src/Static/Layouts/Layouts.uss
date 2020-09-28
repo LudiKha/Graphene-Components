@@ -1,0 +1,38 @@
+/* Layout 1 */
+.layout1 {
+  flex-grow: 1;
+}
+
+.layout1 .inner {
+  max-width: 512px;
+}
+
+.layout .content {}
+
+/* Layout 2 */
+.layout2 {
+  flex-grow: 1;
+}
+
+.layout2 .inner {
+  /* padding: 32px; */
+  /* margin-left: 32px;
+  margin-right: 32px; */
+}
+
+.layout2 .inner {
+  /* padding: 32px; */
+}
+
+.layout2 .content {}
+
+.layout2 .left,
+.layout2 .center,
+.layout2 .right {
+  flex-grow: 1;
+}
+
+.layout2 .inner>.plate__content-container {
+  padding: 16px;
+  max-width: 500px;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "com.graphene.components",
+  "version": "1.0.0",
+  "displayName": "Graphene Components",
+  "description": "Component kit package for Graphene, based on Material UI",
+  "unity": "2018.3",
+  "dependencies": {
+	"com.graphene.core": "file:/GameDev/OpenSource/Graphene/src"
+  },
+  "keywords": [],
+  "author": {
+    "email": "info@kinstrife.com",
+    "name": "CupBearer",
+    "url": "https://www.cup-bearer.com"
+  }
+}

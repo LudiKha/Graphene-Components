@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+  <ui:Foldout focusable="true" label="FoldoutTemplate" binding-path="Value">
+    <Style src="/Packages/com.graphene.components/Static/Styles/Tailwind.uss" />
+    <Style src="/Packages/com.graphene.components/Static/Styles/Globals.uss" />
+    <Style src="/Packages/com.graphene.components/Static/Styles/Typography.uss" />
+  </ui:Foldout>
+</ui:UXML>
