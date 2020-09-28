@@ -5,7 +5,6 @@
   "description": "Component kit package for Graphene, based on Material UI",
   "unity": "2018.3",
   "dependencies": {
-	"com.graphene.core": "file:/GameDev/OpenSource/Graphene/src"
   },
   "keywords": [],
   "author": {

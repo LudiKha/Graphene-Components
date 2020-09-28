@@ -15,6 +15,7 @@
   justify-content: center;
 }
 
+/* Dialog */
 .gr-dialog {}
 
 .gr-dialog__panel {
@@ -68,4 +69,14 @@
 
 TemplateContainer.unity-ui-document__child {
   flex-grow: 1;
+}
+
+/* Button */
+.gr-button,
+.gr-button.unity-button {
+  min-height: 40px;
+}
+
+.unity-base-slider__drag-container {
+  align-self: center;
 }

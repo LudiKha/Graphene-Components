@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+  <Style src="/Packages/com.graphene.components/Static/Styles/Tailwind.uss" />
+  <Style src="/Packages/com.graphene.components/Static/Styles/Globals.uss" />
+  <Style src="/Packages/com.graphene.components/Static/Styles/Typography.uss" />
+  <ui:VisualElement class="border" />
+</ui:UXML>

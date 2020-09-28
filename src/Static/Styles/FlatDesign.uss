@@ -52,6 +52,10 @@
   background-color: var(--white-transparent);
 }
 
+.title,
+.subtitle,
+.title>.unity-text-element,
+.subtitle>.unity-text-element,
 .unity-base-field .unity-label {
   color: white;
 }

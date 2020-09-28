@@ -30,9 +30,20 @@
 .layout2 .center,
 .layout2 .right {
   flex-grow: 1;
+  min-width: 33%;
 }
 
 .layout2 .inner>.plate__content-container {
   padding: 16px;
   max-width: 500px;
+}
+
+.unity-view.left .unity-scroll-view__vertical-scroller {
+  right: inherit;
+  left: 0;
+}
+
+.unity-view.left .unity-scroll-view__content-viewport {
+  margin-right: 0;
+  margin-left: 13px;
 }
