@@ -17,6 +17,7 @@ Component infrastructure and Material Design components for Graphene
 ```
 {
   "dependencies": {
+    "com.graphene.core": "https://github.com/LudiKha/Graphene-Core.git?path=/src",
     "com.graphene.components": "https://github.com/LudiKha/Graphene-Components.git?path=/src",
     ...
   },
