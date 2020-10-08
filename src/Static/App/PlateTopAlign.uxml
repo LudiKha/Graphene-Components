@@ -5,9 +5,12 @@
     <Style src="/Packages/com.graphene.components/Static/Styles/Typography.uss" />
 
     <gr:If binding-path="~Model.Title">
-      <gr:TemplateRef binding-path="Title" type="Label" class="h1 white" />
+      <gr:TemplateRef binding-path="Title" type="Label" class="headline4" />
       <ui:VisualElement class="border" />
     </gr:If>
+
+    <ui:ListView id="Content" name="List" binding-path="Model.ListItems" class="plate__content-container layout-column flex-grow" />
+
     <ui:ScrollView>
       <gr:View id="Content" name="GR__Content" class="plate__content-container layout-column" />
     </ui:ScrollView>

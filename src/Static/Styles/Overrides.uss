@@ -1,0 +1,21 @@
+/* Each root plate will grow */
+TemplateContainer.unity-ui-document__child {
+  flex-grow: 1;
+}
+
+/* Toggle */
+.unity-toggle {
+  align-content: stretch;
+}
+
+/* Move input to end */
+.unity-toggle__input {
+  justify-content: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Center slider */
+.unity-base-slider__drag-container {
+  align-self: center;
+}

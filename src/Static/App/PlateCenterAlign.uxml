@@ -5,7 +5,7 @@
     <Style src="/Packages/com.graphene.components/Static/Styles/Typography.uss" />
 
     <gr:If binding-path="~Model.Title">
-      <ui:Label binding-path="Title" class="h1 white" />
+      <ui:Label binding-path="Title" class="headline4 white" />
       <ui:VisualElement class="border" />
     </gr:If>
     <ui:ScrollView>

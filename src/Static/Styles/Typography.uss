@@ -1,19 +1,72 @@
-:root .title {
-    font-size: 36px;
+:root .h1,
+:root .headline1 {
+  -unity-font: var(--font-headline);
+  font-size: 102px;
 }
 
-:root .subtitle {
-    font-size: 30px;
+:root .h2,
+:root .headline2 {
+  -unity-font: var(--font-headline);
+  font-size: 64px;
 }
 
-:root .h1 {
-    font-size: 24px;
+:root .h3,
+:root .headline3 {
+  -unity-font: var(--font-headline);
+  font-size: 51px;
 }
 
-:root .h2 {
-    font-size: 18px;
+:root .h4,
+:root .headline4 {
+  -unity-font: var(--font-headline);
+  font-size: 36px;
 }
 
-:root .h3 {
-    font-size: 16px;
+:root .h5,
+:root .headline5 {
+  -unity-font: var(--font-headline);
+  font-size: 25px;
+}
+
+:root .h6,
+:root .headline6 {
+  -unity-font: var(--font-headline);
+  font-size: 25px;
+}
+
+:root .subtitle1 {
+  -unity-font: var(--font-headline);
+  font-size: 17px;
+}
+
+:root .subtitle2 {
+  -unity-font: var(--font-headline);
+  font-size: 15px;
+}
+
+:root .body1 {
+  -unity-font: var(--font-body);
+  font-size: 16px;
+}
+
+:root .body2 {
+  -unity-font: var(--font-body);
+  font-size: 14px;
+}
+
+/* Button text */
+.gr-button,
+.gr-button .gr-text-element {
+  -unity-font: var(--font-body);
+  font-size: 14px;
+}
+
+:root .caption {
+  -unity-font: var(--font-body);
+  font-size: 12px;
+}
+
+:root .overline {
+  -unity-font: var(--font-body);
+  font-size: 10px;
 }
