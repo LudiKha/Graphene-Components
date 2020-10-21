@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _VisualTreeAsset: {fileID: 9197481963319205126, guid: 9959c446d4654604ba8ebb1ba9ff35f7, type: 3}
   _RootElementName: 
-  _AddClass: subtitle
+  _AddClass: subtitle1
   _AddClassToChildren: 
+  _forceHeight: -1

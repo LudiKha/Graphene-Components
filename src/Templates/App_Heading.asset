@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0aea008c92fe7af46838cc9e86ba6246, type: 3}
-  m_Name: App_Title
+  m_Name: App_Heading
   m_EditorClassIdentifier: 
   _VisualTreeAsset: {fileID: 9197481963319205126, guid: 9959c446d4654604ba8ebb1ba9ff35f7, type: 3}
   _RootElementName: 
-  _AddClass: title
+  _AddClass: h2
   _AddClassToChildren: 
+  _forceHeight: -1
