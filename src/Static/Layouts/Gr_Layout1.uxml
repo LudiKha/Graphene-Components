@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.graphene.components/Static/Layouts/Gr_Layouts.uss?fileID=7433441132597879392&amp;guid=ceb9cb2abe2fe724d81ff6e5e1c67827&amp;type=3#Gr_Layouts" />
+    <ui:VisualElement name="Layout" class="layout1 layout">
+        <Graphene.Elements.View id="Top" name="Top" class="top noshrink" />
+        <ui:VisualElement name="Body" class="flex-grow justify-center align-center">
+            <ui:VisualElement name="Inner" class="inner flex-grow justify-center">
+                <Graphene.Elements.View id="Content" name="GR__Content" class="plate__content-container layout-column " />
+                <Graphene.Elements.View id="Children" default="true" name="GR__Children" class="plate__child-container layout-column flex-grow" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <Graphene.Elements.View id="Bottom" name="Bottom" class="bottom noshrink" />
+    </ui:VisualElement>
+</ui:UXML>

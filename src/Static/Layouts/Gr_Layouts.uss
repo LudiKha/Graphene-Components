@@ -1,0 +1,75 @@
+.layout1 {
+  flex-grow: 1;
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.layout1 .inner {
+  min-width: 512px;
+  max-width: 512px;
+}
+
+.layout .content {}
+
+.layout2 {
+  flex-grow: 1;
+}
+
+.layout2 .left {
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+.layout2 .right {
+  flex-grow: 1;
+  min-width: 50%;
+}
+
+.layout3 {
+  flex-grow: 1;
+}
+
+.layout3 .inner {}
+
+.layout3 .inner {}
+
+.layout3 .content {}
+
+.layout3 .left {
+  flex-grow: 1;
+  min-width: 33%;
+}
+
+.layout3 .center {
+  flex-grow: 1;
+  min-width: 33%;
+}
+
+.layout3 .right {
+  flex-grow: 1;
+  min-width: 33%;
+}
+
+.layout3 .inner>.plate__content-container {
+  padding: 16px;
+  max-width: 500px;
+}
+
+.unity-view.left .unity-scroll-view__vertical-scroller {
+  right: inherit;
+  left: 0;
+}
+
+.unity-view.left .unity-scroll-view__content-viewport {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.inner .column-inner {
+  max-width: 33%;
+  min-width: 33%;
+}
+
+.layout .plate__child-container.layout-column>.plate {
+  margin-top: 24px;
+}

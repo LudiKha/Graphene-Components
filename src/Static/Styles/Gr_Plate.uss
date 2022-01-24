@@ -1,0 +1,8 @@
+.plate {
+  /*transition: all 1s;*/
+}
+
+.plate.bg,
+.plate.background {
+  background-color: rgba(0, 0, 0, 0.67);
+}

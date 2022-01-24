@@ -17,5 +17,5 @@ TemplateContainer.unity-ui-document__child {
 
 /* Center slider */
 .unity-base-slider__drag-container {
-  align-self: center;
+  /*align-self: center;*/
 }

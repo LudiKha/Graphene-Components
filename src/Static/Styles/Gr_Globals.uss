@@ -34,6 +34,14 @@
   flex-shrink: 1;
 }
 
+.noshrink {
+  flex-shrink: 0;
+}
+
+.nogrow {
+  flex-grow: 0;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
@@ -98,4 +106,12 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.submit {
+  background-color: rgba(64, 142, 40, 0.7);
+}
+
+.cancel {
+  background-color: rgba(156, 39, 39, 0.71);
 }

@@ -1,55 +1,55 @@
-:root .h1,
-:root .headline1 {
+.h1,
+.headline1 {
   -unity-font: var(--font-headline);
   font-size: 102px;
 }
 
-:root .h2,
-:root .headline2 {
+.h2,
+.headline2 {
   -unity-font: var(--font-headline);
   font-size: 64px;
 }
 
-:root .h3,
-:root .headline3 {
+.h3,
+.headline3 {
   -unity-font: var(--font-headline);
   font-size: 51px;
 }
 
-:root .h4,
-:root .headline4 {
+.h4,
+.headline4 {
   -unity-font: var(--font-headline);
   font-size: 36px;
 }
 
-:root .h5,
-:root .headline5 {
+.h5,
+.headline5 {
   -unity-font: var(--font-headline);
   font-size: 25px;
 }
 
-:root .h6,
-:root .headline6 {
+.h6,
+.headline6 {
   -unity-font: var(--font-headline);
   font-size: 25px;
 }
 
-:root .subtitle1 {
+.subtitle1 {
   -unity-font: var(--font-headline);
   font-size: 17px;
 }
 
-:root .subtitle2 {
+.subtitle2 {
   -unity-font: var(--font-headline);
   font-size: 15px;
 }
 
-:root .body1 {
+.body1 {
   -unity-font: var(--font-body);
   font-size: 16px;
 }
 
-:root .body2 {
+.body2 {
   -unity-font: var(--font-body);
   font-size: 14px;
 }
@@ -61,12 +61,12 @@
   font-size: 14px;
 }
 
-:root .caption {
+.caption {
   -unity-font: var(--font-body);
   font-size: 12px;
 }
 
-:root .overline {
+.overline {
   -unity-font: var(--font-body);
   font-size: 10px;
 }

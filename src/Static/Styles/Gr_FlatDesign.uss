@@ -52,6 +52,7 @@
   background-color: var(--white-transparent);
 }
 
+.unity-text-element,
 .title,
 .subtitle,
 .paragraph,
@@ -61,14 +62,14 @@
   color: white;
 }
 
-:root .navbar {
+:root .top .navbar {
   /* border-bottom-width: var(--border-width); */
   border-bottom-color: white;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.navbar .gr-button {
+.top .navbar .gr-button {
   border-bottom-width: var(--border-width);
   border-bottom-color: transparent;
   background-color: transparent;
@@ -77,15 +78,15 @@
   border-bottom-left-radius: 0;
 }
 
-.navbar .gr-button:focus,
-.navbar .gr-button:active,
-.navbar .gr-button:hover {
+.top .navbar .gr-button:focus,
+.top .navbar .gr-button:active,
+.top .navbar .gr-button:hover {
   border-bottom-color: var(--primary-color);
   margin-bottom: 0;
 }
 
-.navbar .active>.gr-button,
-.navbar .gr-button.active {
+.top .navbar .active>.gr-button,
+.top .navbar .gr-button.active {
   background-color: var(--primary-color);
   color: white;
 }
@@ -125,6 +126,12 @@
   border-color: var(--border-color);
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.border.inline
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .white .unity-text-element {

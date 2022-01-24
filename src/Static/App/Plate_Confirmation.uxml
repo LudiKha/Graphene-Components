@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.graphene.components/Static/Styles/Gr_Globals.uss?fileID=7433441132597879392&amp;guid=860e7d8be56788642a4c5148b164c1f8&amp;type=3#Gr_Globals" />
+    <ui:VisualElement name="Plate" class="plate">
+        <ui:VisualElement name="Top" class="gr-padding">
+            <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" binding-path="Title" class="h5" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Body" class="gr-padding flex-grow">
+            <ui:Label text="Message" display-tooltip-when-elided="true" name="Message" binding-path="Message" />
+        </ui:VisualElement>
+        <Graphene.Elements.View id="Content" name="GR__Content" class="plate__content-container layout-column" />
+        <Graphene.Elements.View id="Children" default="true" name="GR__Children" class="plate__child-container layout-column" />
+        <ui:VisualElement name="Actions" class="gr-padding flex-row justify-around">
+            <ui:Button text="Confirm" display-tooltip-when-elided="true" name="Confirm" binding-path="Confirm" />
+            <ui:Button text="Cancel" display-tooltip-when-elided="true" name="Cancel" binding-path="Cancel" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
