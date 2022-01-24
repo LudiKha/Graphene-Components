@@ -1,17 +1,19 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Graphene.ViewModel
 {
-  [System.Serializable]
+  [System.Serializable][DataContract]
   public class BindableBaseField<T>: INotifyValueChanged<T>
   {
     [SerializeField]
     protected T m_Value;
 
-    [BindBaseField("Value")]
+    [BindBaseField("Value")][DataMember(Name = "Value")]
     public virtual T value { get => m_Value; set {
         SetValueWithoutNotify(value);
         ValueChangeCallback(m_Value);
@@ -19,10 +21,10 @@ namespace Graphene.ViewModel
     }
 
     [field: SerializeField]
-    [Bind("Label", BindingMode.OneWay)]
+    [Bind("Label", BindingMode.OneWay)][IgnoreDataMember]
     public virtual string Label { get; set; }
 
-    [BindValueChangeCallback("ValueChange")]
+    [BindValueChangeCallback("ValueChange")][IgnoreDataMember]
     public EventCallback<ChangeEvent<T>> ValueChange => (changeEvent) => { ValueChangeCallback(changeEvent.newValue); };
 
     public event System.EventHandler<T> OnValueChange;
@@ -36,11 +38,13 @@ namespace Graphene.ViewModel
     {
       OnValueChange?.Invoke(this, value);
     }
+
+    public void ResetCallbacks() => OnValueChange = null;
   }
 
 
 
-  [System.Serializable, Draw(ControlType.Toggle)]
+  [System.Serializable, Draw(ControlType.Toggle), DataContract]
   public class BindableBool : BindableBaseField<bool>
   {
   }
@@ -48,17 +52,17 @@ namespace Graphene.ViewModel
 
 
   [System.Serializable, Draw(ControlType.Slider)]
-  public class RangeBaseField<TValueType> : BindableBaseField<TValueType>
+  public abstract class RangeBaseField<TValueType> : BindableBaseField<TValueType>
   {
-    public virtual float normalizedValue { get => throw new System.NotImplementedException(); }
+    public abstract float normalizedValue { get; }
 
-    [Bind("Min")]
+    [Bind("Min"), DataMember(Name = "Min")]
     public TValueType min;
-    [Bind("Max")]
+    [Bind("Max"), DataMember(Name = "Max")]
     public TValueType max;
   }
 
-  [System.Serializable, Draw(ControlType.Slider)]
+  [System.Serializable, Draw(ControlType.Slider), DataContract]
   public class BindableFloat : RangeBaseField<float>
   {
     public override float normalizedValue => m_Value / (max - min);
@@ -76,7 +80,7 @@ namespace Graphene.ViewModel
     }
   }
 
-  [System.Serializable, Draw(ControlType.SliderInt)]
+  [System.Serializable, Draw(ControlType.SliderInt), DataContract]
   public class BindableInt : RangeBaseField<int>
   {
     public override float normalizedValue => (float)m_Value / ((float)max - (float)min);
@@ -94,26 +98,61 @@ namespace Graphene.ViewModel
     }
   }
 
-  [System.Serializable, Draw(ControlType.SelectField)]
+  [System.Serializable, Draw(ControlType.SelectField), DataContract]
   public class BindableNamedInt : BindableBaseField<int>
   {
     [field: SerializeField]
-    [Bind("Items")]
+    [Bind("Items"), IgnoreDataMember]
     public List<string> items { get; set; } = new List<string>();
 
     public float normalizedValue => (float)m_Value / items.Count;
 
-    public void InitFromEnum<T>()
+    public void InitFromEnum<T>(bool splitUppercase = true)
     {
       this.items.Clear();
 
       foreach (string s in System.Enum.GetNames(typeof(T)).ToList())
-        this.items.Add(s);
+      {
+        string item = s;
+        if (splitUppercase)
+          item = StringUtility.InsertSpaceBeforeUpperCase(s);
+
+        this.items.Add(item);
+      }
     }
     public void InitFromList(IEnumerable<string> list)
     {
       this.items.Clear();
       this.items = list.ToList();
+    }
+  }
+
+  static class StringUtility
+  {
+    public static string InsertSpaceBeforeUpperCase(this string str)
+    {
+      var sb = new StringBuilder();
+
+      char previousChar = char.MinValue; // Unicode '\0'
+
+      foreach (char c in str)
+      {
+        if (char.IsUpper(c))
+        {
+          // If not the first character and previous character is not a space, insert a space before uppercase
+
+          if (sb.Length != 0 && previousChar != ' ')
+          {
+            sb.Append(' ');
+          }
+        }
+
+        sb.Append(c);
+
+        previousChar = c;
+      }
+
+      return sb.ToString();
     }
   }
 }
