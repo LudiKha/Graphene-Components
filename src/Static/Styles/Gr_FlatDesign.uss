@@ -1,6 +1,7 @@
 .unity-ui-document__root,
 :root {
-  --primary-color: rgb(200, 50, 50);
+  --primary-color: rgb(200, 55, 55);
+  --primary-color-transparent: rgba(200, 55, 55, 0.7);
   --dim-color: rgba(0, 0, 0, 0.5);
   --focus-color: rgba(0, 0, 0, 0.25);
   --hover-color: rgba(0, 0, 0, 0.5);
@@ -19,6 +20,7 @@
   background-image: var(--gradient);
 }
 
+.unity-popup-field__input,
 .gr-template>.unity-base-field,
 .gr-list-item.unity-button,
 .gr-button,
@@ -31,6 +33,9 @@
   color: white;
 }
 
+.unity-base-field:hover,
+.unity-popup-field__input:hover,
+.gr-button:hover,
 .unity-button:hover {
   color: var(--primary-color);
 }
@@ -62,10 +67,17 @@
   color: white;
 }
 
-:root .top .navbar {
+.top .navbar {
   /* border-bottom-width: var(--border-width); */
   border-bottom-color: white;
   padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.top .navbar .unity-group-box {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -85,9 +97,10 @@
   margin-bottom: 0;
 }
 
+.gr-button-group .unity-button.active,
 .top .navbar .active>.gr-button,
 .top .navbar .gr-button.active {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-transparent);
   color: white;
 }
 
@@ -103,20 +116,21 @@
   background-color: var(--active-color);
 }
 
-:root .unity-base-field:focus {
+.unity-base-field:focus {
   background-color: var(--focus-color);
 }
 
-:root .unity-base-field:hover {
+/* .unity-base-field:hover,
+.unity-base-field__input:hover {
   background-color: var(--hover-color);
-}
-
-:root .unity-base-field:active {
+} */
+.unity-base-field:active {
   background-color: var(--active-color);
 }
 
-:root .unity-base-field:hover .unity-label,
-:root .unity-base-field:active .unity-label {
+.unity-base-field:hover .unity-text-element,
+.unity-base-field:focus .unity-text-element,
+.unity-base-field:active .unity-text-element {
   color: var(--primary-color);
 }
 
@@ -128,12 +142,27 @@
   margin-bottom: 16px;
 }
 
-.border.inline
-{
+.border.inline {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
 .white .unity-text-element {
   color: white;
+}
+
+.submit.unity-button,
+.submit>.unity-button {
+  background-color: rgba(64, 142, 40, 0.7);
+}
+
+.cancel.unity-button,
+.cancel>.unity-button {
+  background-color: rgba(156, 39, 39, 0.7);
+}
+
+.gr-button:disabled,
+.unity-button:disabled {
+  background-color: rgba(150, 150, 150, 1);
+  border-color: rgba(125, 125, 125, 1);
 }

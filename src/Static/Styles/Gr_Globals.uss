@@ -107,11 +107,3 @@
   left: 0;
   right: 0;
 }
-
-.submit {
-  background-color: rgba(64, 142, 40, 0.7);
-}
-
-.cancel {
-  background-color: rgba(156, 39, 39, 0.71);
-}

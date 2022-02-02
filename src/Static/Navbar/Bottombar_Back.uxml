@@ -1,14 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
-  <Style src="project://database/Packages/com.graphene.components/Static/Navbar/Navbar.uss?fileID=7433441132597879392&amp;guid=997a3b559e365cc409590db6d41f1f59&amp;type=3#Navbar" />
-  <ui:VisualElement name="Nav" class="nav bottom">
-    <ui:VisualElement class="border" />
-    <ui:VisualElement name="Bottombar" class="navbar p-16 graphene-navbar__content flex-row justify-between flex-grow bottombar">
-      <ui:VisualElement class="flex-row justify-around">
-        <Graphene.Elements.Route route="index" class="flex-row justify-around">
-          <ui:Button focusable="true" name="Back" text="BACK" class="gr-button" />
-        </Graphene.Elements.Route>
-      </ui:VisualElement>
-      <Graphene.Elements.ButtonGroup default="true" name="GR__Content" class="plate__content-container flex-row justify-around" />
+    <Style src="project://database/Packages/com.graphene.components/Static/Navbar/Navbar.uss?fileID=7433441132597879392&amp;guid=997a3b559e365cc409590db6d41f1f59&amp;type=3#Navbar" />
+    <ui:VisualElement name="Nav" class="nav bottom">
+        <ui:VisualElement class="border" />
+        <ui:VisualElement name="Bottombar" class="navbar p-16 graphene-navbar__content flex-row justify-between flex-grow bottombar">
+            <ui:VisualElement class="flex-row justify-around">
+                <Graphene.Elements.Route route="index" class="flex-row justify-around">
+                    <ui:Button focusable="true" name="Back" text="BACK" class="gr-button" />
+                </Graphene.Elements.Route>
+            </ui:VisualElement>
+            <Graphene.Elements.View name="GR__Content" id="GR__Content" class="flex-row" />
+        </ui:VisualElement>
     </ui:VisualElement>
-  </ui:VisualElement>
 </ui:UXML>
