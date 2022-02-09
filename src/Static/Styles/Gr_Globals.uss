@@ -107,3 +107,15 @@
   left: 0;
   right: 0;
 }
+
+.plate,
+.plate.fade {
+  transition-property: opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  /* transition-timing-function: linear; */
+}
+
+.plate.fadeout {
+  opacity: 0;
+}

@@ -6,3 +6,8 @@
 .plate.background {
   background-color: rgba(0, 0, 0, 0.67);
 }
+
+.plate.dim,
+.plate.dimmer {
+  background-color: rgba(0, 0, 0, 0.9);
+}
