@@ -1,0 +1,7 @@
+.modal {
+  min-width: 256px;
+  max-width: 512px;
+  min-height: 50px;
+  max-height: 80%;
+  background-color: var(--panel-background-color);
+}

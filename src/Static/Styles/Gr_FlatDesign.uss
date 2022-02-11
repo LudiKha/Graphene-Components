@@ -12,6 +12,7 @@
   --border-color: white;
   --border-radius: 4px;
   --gradient: resource('Gradients/MegaTron');
+  --panel-background-color: rgba(36, 34, 32, 1);
 }
 
 #App-container,
@@ -145,6 +146,10 @@
 .border.inline {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.border.nomargin {
+  margin: 0;
 }
 
 .white .unity-text-element {
