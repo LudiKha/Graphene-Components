@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
+  <ui:VisualElement name="Plate" class="plate">
+    <ui:Foldout text="Foldout" binding-path="Toggle.Value" class="headline6 ">
+      <Graphene.Elements.View id="Content" name="GR__Content" class="plate__content-container layout-column" />
+      <Graphene.Elements.View id="Children" default="true" name="GR__Children" class="plate__child-container layout-column" />
+    </ui:Foldout>
+  </ui:VisualElement>
+</ui:UXML>

@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-  <ui:Slider focusable="true" label="SliderTemplate" binding-path="Value" value="0.5" low-value="0" high-value="1">
+  <ui:Slider picking-mode="Ignore" focusable="true" label="SliderTemplate" binding-path="Value" value="0.5" low-value="0" high-value="1">
     <Style src="/Packages/com.graphene.components/Static/Styles/Tailwind.uss" />
     <Style src="/Packages/com.graphene.components/Static/Styles/Globals.uss" />
     <Style src="/Packages/com.graphene.components/Static/Styles/Typography.uss" />

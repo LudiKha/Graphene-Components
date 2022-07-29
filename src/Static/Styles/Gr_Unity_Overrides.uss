@@ -3,19 +3,72 @@ TemplateContainer.unity-ui-document__child {
   flex-grow: 1;
 }
 
+/*====== BaseField =====*/
+.unity-base-field,
+.unity-base-field>.unity-label {
+  margin-top: 0;
+  margin: 0;
+}
+
 /* Toggle */
 .unity-toggle {
   align-content: stretch;
 }
 
-/* Move input to end */
+/* Move Toggle input to end */
 .unity-toggle__input {
   justify-content: flex-end;
   align-content: flex-end;
   align-items: flex-end;
 }
 
+/* Revert previous toggle changes for Foldout */
+.unity-toggle__input.unity-foldout__input {
+  justify-content: inherit;
+  align-content: inherit;
+  align-items: inherit;
+}
+
 /* Center slider */
 .unity-base-slider__drag-container {
   /*align-self: center;*/
+}
+
+TemplateContainer>.unity-base-field>.unity-base-field__input {
+  min-width: 100px;
+  max-width: 250px;
+}
+
+.unity-base-field {
+  justify-content: space-between;
+}
+
+.unity-base-slider--horizontal {}
+
+.unity-base-slider>.unity-label {
+  font-size: 14px;
+  max-width: 33%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*====== SCROLLING =====*/
+/* Scrolling speed */
+:root {
+  --unity-metrics-single_line-height: 500px;
+}
+
+/* Scroller */
+.unity-scroller--vertical {
+  width: 10px;
+}
+
+.unity-scroller--vertical .unity-base-slider--vertical {
+  width: 10px;
+  min-width: 10px;
+}
+
+.unity-scroller--vertical .unity-repeat-button {
+  width: 10px;
+  height: 10px;
 }

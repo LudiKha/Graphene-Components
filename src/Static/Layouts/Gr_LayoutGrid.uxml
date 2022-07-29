@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.graphene.components/Static/Layouts/Gr_Layouts.uss?fileID=7433441132597879392&amp;guid=ceb9cb2abe2fe724d81ff6e5e1c67827&amp;type=3#Gr_Layouts" />
+    <Style src="project://database/Packages/com.graphene.components/Static/Styles/Gr_Globals.uss?fileID=7433441132597879392&amp;guid=860e7d8be56788642a4c5148b164c1f8&amp;type=3#Gr_Globals" />
+    <ui:VisualElement name="Layout" class="layout grid">
+        <Graphene.Elements.View id="Content" name="GR__Content" default="true" class="plate__view-container flex-grow layout-row grid-content flex-wrap" />
+    </ui:VisualElement>
+</ui:UXML>

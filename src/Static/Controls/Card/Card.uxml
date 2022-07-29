@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+  <ui:VisualElement name="Card" class="frame card">
+    <Graphene.Elements.If name="If-Title" binding-path="Label" value="true">
+      <ui:VisualElement name="Top" class="flex-row align-center justify-center gr-padding top">
+        <ui:Label text="Label" display-tooltip-when-elided="true" name="Label" binding-path="Label" class="h6" />
+      </ui:VisualElement>
+    </Graphene.Elements.If>
+    <Graphene.Elements.If name="If-Description" value="true" binding-path="Description">
+      <ui:VisualElement name="Border" class="border nomargin" />
+      <ui:VisualElement name="Center" class="gr-padding justify-center align-center body">
+        <ui:Label text="Description" display-tooltip-when-elided="true" name="Body" binding-path="Description" class="body" style="font-size: 16px; -unity-text-align: upper-center; white-space: normal;" />
+      </ui:VisualElement>
+    </Graphene.Elements.If>
+    <Graphene.Elements.If binding-path="ShowContent" value="true" name="If-Content" class="flex-row">
+      <ui:VisualElement name="Border" class="border nomargin" />
+      <ui:VisualElement name="Content" class="gr-padding flex-grow">
+        <Graphene.Elements.View name="GR__Content" id="GR__Content" />
+        <Graphene.Elements.View name="GR__Children" id="GR__Children" />
+      </ui:VisualElement>
+    </Graphene.Elements.If>
+    <Graphene.Elements.If binding-path="HasActions" value="true" name="If-Actions">
+      <ui:VisualElement name="Border" class="border nomargin" />
+      <ui:VisualElement name="Bottom" class="flex-row gr-padding justify-end">
+        <ui:Button text="Close" display-tooltip-when-elided="true" tooltip="Close the message" name="CloseButton" binding-path="CloseAction" />
+      </ui:VisualElement>
+    </Graphene.Elements.If>
+  </ui:VisualElement>
+</ui:UXML>

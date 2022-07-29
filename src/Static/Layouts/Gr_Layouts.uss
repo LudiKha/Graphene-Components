@@ -66,11 +66,16 @@
   margin-left: 0;
 }
 
-.inner .column-inner {
-  max-width: 33%;
+.layout2 .inner .column-inner {
+  max-width: 50%;
   min-width: 33%;
+  flex-grow: 0;
 }
 
 .layout .plate__child-container.layout-column>.plate {
   margin-top: 24px;
+}
+
+.layout.nospace .plate__child-container.layout-column>.plate {
+  margin-top: 0px;
 }

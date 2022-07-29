@@ -31,7 +31,7 @@
 .h6,
 .headline6 {
   -unity-font: var(--font-headline);
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .subtitle1 {

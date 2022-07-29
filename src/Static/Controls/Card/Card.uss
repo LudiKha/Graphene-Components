@@ -1,0 +1,22 @@
+.unity-ui-document__root,
+:root {
+  --card-background-color: rgba(36, 34, 32, 1);
+}
+
+.card {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: var(--card-background-color);
+}
+
+.card.xl {}
+
+.grid {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid-cell {
+  flex-grow: 1;
+  flex-basis: 0;
+}

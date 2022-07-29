@@ -18,10 +18,12 @@
   margin: 0;
 }
 
+.layout-row,
 .flex-row {
   flex-direction: row;
 }
 
+.layout-column,
 .flex-column {
   flex-direction: column;
 }
@@ -40,6 +42,18 @@
 
 .nogrow {
   flex-grow: 0;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .justify-start {
@@ -118,4 +132,9 @@
 
 .plate.fadeout {
   opacity: 0;
+}
+
+.nopick,
+.nopick TemplateContainer {
+  picking-mode: ignore;
 }
