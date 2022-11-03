@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
     <Style src="project://database/Packages/com.graphene.components/Static/Navbar/Navbar.uss?fileID=7433441132597879392&amp;guid=997a3b559e365cc409590db6d41f1f59&amp;type=3#Navbar" />
-    <ui:VisualElement name="Nav" class="nav">
+    <ui:VisualElement name="Nav" class="nav plate">
         <ui:VisualElement class="border" />
         <ui:VisualElement name="Navbar" class="navbar p-16 graphene-navbar__content flex-row justify-between flex-grow">
             <ui:VisualElement class="flex-row justify-around">
