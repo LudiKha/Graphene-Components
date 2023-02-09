@@ -4,7 +4,7 @@
         <Graphene.Elements.View id="Top" name="Top" class="top noshrink" />
         <ui:VisualElement name="Body" class="flex-grow justify-center align-center">
             <ui:VisualElement name="Inner" class="inner flex-grow justify-center">
-                <Graphene.Elements.View id="Content" name="GR__Content" class="plate__content-container layout-column " />
+                <Graphene.Elements.View id="Content" name="GR__Content" class="plate__content-container layout-column" />
                 <Graphene.Elements.View id="Children" default="true" name="GR__Children" class="plate__child-container layout-column flex-grow" />
             </ui:VisualElement>
         </ui:VisualElement>

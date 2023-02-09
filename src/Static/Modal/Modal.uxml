@@ -15,8 +15,8 @@
             <ui:VisualElement name="Border" class="border" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
             <Graphene.Elements.If binding-path="ShowContent" value="true" name="If-Content" class="flex-row">
                 <ui:VisualElement name="Content" class="gr-padding flex-grow">
-                    <Graphene.Elements.View name="GR__Content" id="GR__Content" />
-                    <Graphene.Elements.View name="GR__Children" id="GR__Children" />
+                    <Graphene.Elements.View name="GR__Content" id="Content" />
+                    <Graphene.Elements.View name="GR__Children" id="Children" default="true" />
                 </ui:VisualElement>
             </Graphene.Elements.If>
             <Graphene.Elements.If binding-path="ShowCloseButton" value="true" name="If-Actions">

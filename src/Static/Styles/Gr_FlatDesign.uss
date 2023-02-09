@@ -181,7 +181,7 @@
 }
 
 .gr-button:disabled,
-.unity-button:disabled {
+.gr-button.unity-button:disabled {
   background-color: rgba(150, 150, 150, 1);
   border-color: rgba(125, 125, 125, 1);
 }

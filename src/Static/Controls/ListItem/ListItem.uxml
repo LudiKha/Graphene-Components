@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.graphene.components/Static/Controls/ListItem/ListItem.uss?fileID=7433441132597879392&amp;guid=995161118b4683c4b9127158e9833e98&amp;type=3#ListItem" />
+    <ui:Button name="ListItem" binding-path="Action" class="gr-list-item gr-button flex-row justify-between ">
+        <ui:VisualElement name="Texts" picking-mode="Ignore" class="body gr-padding align-start justify-center">
+            <Graphene.Elements.If name="If-Title" binding-path="Label" value="true" picking-mode="Ignore">
+                <ui:Label text="Label" display-tooltip-when-elided="true" name="Label" binding-path="Label" picking-mode="Ignore" class="bold nomargin body gr_list-item--text" />
+            </Graphene.Elements.If>
+            <Graphene.Elements.If name="If-Description" value="true" binding-path="Description" picking-mode="Ignore">
+                <ui:Label text="Description" display-tooltip-when-elided="true" name="Body" binding-path="Description" picking-mode="Ignore" class="caption nomargin gr_list-item--text" style="white-space: normal;" />
+            </Graphene.Elements.If>
+        </ui:VisualElement>
+        <Graphene.Elements.If binding-path="HasActions" name="If-Actions" picking-mode="Ignore" class="justify-center">
+            <Graphene.Elements.ButtonGroup binding-path="Actions" activeIndex="1" class="layout-row nomargin" style="padding-right: 8px; padding-top: 0; padding-bottom: 0; padding-left: 0;" />
+        </Graphene.Elements.If>
+    </ui:Button>
+</ui:UXML>

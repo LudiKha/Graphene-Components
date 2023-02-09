@@ -1,8 +1,6 @@
 .layout1 {
   flex-grow: 1;
   flex-shrink: 1;
-  transition-property: all;
-  transition-duration: 1s;
 }
 
 .layout1 .inner {

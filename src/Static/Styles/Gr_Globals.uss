@@ -1,21 +1,37 @@
-.p-16 {
-  padding: 16px;
-}
+
 
 .gr-padding {
   padding: 16px;
-}
-
-.p-8 {
-  padding: 8px;
 }
 
 .gr-padding-small {
   padding: 8px;
 }
 
+
+.p16
+.p-16 {
+  padding: 16px;
+}
+
+.p8,
+.p-8 {
+  padding: 8px;
+}
+
+.p4,
+.p-4 {
+  padding: 4px;
+}
+
 .nomargin {
   margin: 0;
+}
+
+.nopad,
+.nopadding
+ {
+	padding: 0;
 }
 
 .layout-row,

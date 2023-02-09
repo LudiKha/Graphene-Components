@@ -16,7 +16,7 @@
     margin: 0;
 }
 
-.nav.bottom .border {
+.bottom .nav .border {
     bottom: auto;
     top: 0;
 }
@@ -25,3 +25,53 @@
     -unity-font-definition: resource('Fonts/Marcellus-Regular SDF');
     -unity-font-style: bold;
 }
+
+
+/* Bottom Nav */
+.bottom .navbar {
+    /* border-bottom-width: var(--border-width); */
+    border-top-color: white;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  
+  /* Nav Boxgroup */
+  .navbar .unity-group-box {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Bottom Nav buttons */
+  .bottom .navbar .gr-button {
+    border-top-width: var(--border-width);
+    border-top-color: transparent;
+    background-color: transparent;
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .bottom .navbar .gr-button:focus,
+  .bottom .navbar .gr-button:active,
+  .bottom .navbar .gr-button:hover {
+    border-top-color: var(--primary-color);
+    margin-top: 0;
+  }
+  
+  .gr-button-group .unity-button.active,
+  .bottom .navbar .active>.gr-button,
+  .bottom .navbar .gr-button.active {
+    background-color: var(--primary-color-transparent);
+    color: white;
+  }
+  
+  .top .nav .navbar .graphene-navbar__container {
+    align-items: flex-end;
+    flex-grow: 1;
+  }
+  .bottom .nav .navbar .graphene-navbar__container {
+    align-items: flex-start;
+    flex-grow: 1;
+  }

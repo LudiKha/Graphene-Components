@@ -7,6 +7,7 @@
   min-width: 50px;
   min-height: 50px;
   background-color: var(--card-background-color);
+  border-radius: 4px;
 }
 
 .card.xl {}

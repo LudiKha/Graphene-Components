@@ -70,3 +70,7 @@
   -unity-font: var(--font-body);
   font-size: 10px;
 }
+
+.bold {
+  -unity-font-style: bold;
+}

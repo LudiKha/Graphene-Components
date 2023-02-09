@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.graphene.components/Static/Layouts/Gr_Layouts.uss?fileID=7433441132597879392&amp;guid=ceb9cb2abe2fe724d81ff6e5e1c67827&amp;type=3#Gr_Layouts" />
+    <Graphene.Elements.View default="true" id="Children" />
+</ui:UXML>

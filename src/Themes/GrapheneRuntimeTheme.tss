@@ -10,6 +10,8 @@
 @import url("/Packages/com.graphene.components/Static/Navbar/Navbar.uss");
 @import url("/Packages/com.graphene.components/Static/Modal/Modal.uss");
 @import url("/Packages/com.graphene.components/Static/Controls/Card/Card.uss");
+@import url("/Packages/com.graphene.components/Static/Controls/ListItem/ListItem.uss");
+
 
 
 

@@ -1,0 +1,23 @@
+.unity-ui-document__root {
+  --card-background-color: rgb(36, 34, 32);
+}
+
+:root {
+  --card-background-color: rgb(36, 34, 32);
+}
+
+.gr-list-item.unity-button {
+  padding: 0;
+  margin: 0;
+}
+
+.gr-list-item .gr-padding {
+  padding: 8px;
+}
+
+.gr-list-item .unity-button,
+.gr-list-item .gr-button {
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 40px;
+}
