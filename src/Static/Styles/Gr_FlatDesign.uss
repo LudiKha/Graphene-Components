@@ -153,6 +153,9 @@
   border-top-width: var(--border-width);
   width: 100%;
   border-color: var(--border-color);
+}
+
+.border.spacer {  
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -164,6 +167,12 @@
 
 .border.nomargin {
   margin: 0;
+}
+
+.divider {
+  height: 100%;
+  border-left-width: var(--border-width);
+  border-color: var(--border-color);
 }
 
 .white .unity-text-element {
@@ -196,4 +205,8 @@
 /* === DropDown */
 .unity-base-dropdown .unity-base-dropdown__container-inner {
   background-color: var(--panel-background-color);
+}
+
+.unity-base-field__input {
+  color: white;
 }

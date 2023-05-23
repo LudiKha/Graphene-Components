@@ -1,0 +1,36 @@
+.unity-ui-document__root,
+:root {
+  --card-background-color: rgba(36, 34, 32, 1);
+}
+
+.grid {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid-cell {
+  /* flex-grow: 1;
+  flex-basis: 0; */
+}
+
+.grid-cell,
+.grid-cell.gr-button,
+.grid-cell.unity-button,
+.grid-cell.gr-button.unity-button {
+  min-width: 50px;
+  /* max-width: 50px; */
+  min-height: 50px;
+  /* max-height: 50px; */
+}
+
+.grid-cell:hover,
+.grid-cell.gr-button:hover,
+.grid-cell.unity-button:hover,
+.grid-cell.gr-button.unity-button:hover,
+.grid-cell.active,
+.grid-cell.gr-button.active,
+.grid-cell.unity-button.active,
+.grid-cell.gr-button.unity-button.active 
+{
+  border-width: 3px;
+}

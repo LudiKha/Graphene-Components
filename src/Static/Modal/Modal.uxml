@@ -3,20 +3,20 @@
         <ui:VisualElement name="Modal" class="frame modal">
             <Graphene.Elements.If name="If-Title" binding-path="Title" value="true">
                 <ui:VisualElement name="Top" class="flex-row align-center justify-center gr-padding top">
-                    <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" binding-path="Title" class="h5" />
+                    <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" binding-path="Title" class="h6 modal--title" />
                 </ui:VisualElement>
             </Graphene.Elements.If>
             <ui:VisualElement name="Border" class="border nomargin" />
             <Graphene.Elements.If name="If-Message" value="true" binding-path="Message">
                 <ui:VisualElement name="Center" class="gr-padding justify-center align-center body">
-                    <ui:Label text="Message" display-tooltip-when-elided="true" name="Body" binding-path="Message" class="body" style="font-size: 16px; -unity-text-align: upper-center; white-space: normal;" />
+                    <ui:Label text="Message" display-tooltip-when-elided="true" name="Body" binding-path="Message" class="body modal--body" style="font-size: 16px; -unity-text-align: upper-center; white-space: normal;" />
                 </ui:VisualElement>
             </Graphene.Elements.If>
-            <ui:VisualElement name="Border" class="border" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
-            <Graphene.Elements.If binding-path="ShowContent" value="true" name="If-Content" class="flex-row">
+            <ui:VisualElement name="Border" class="border nomargin"/>
+            <Graphene.Elements.If binding-path="HasContent" value="true" name="If-Content" class="flex-row">
                 <ui:VisualElement name="Content" class="gr-padding flex-grow">
-                    <Graphene.Elements.View name="GR__Content" id="Content" />
-                    <Graphene.Elements.View name="GR__Children" id="Children" default="true" />
+                    <Graphene.Elements.View name="Content" id="Content" />
+                    <Graphene.Elements.View name="Children" id="Children" default="true" />
                 </ui:VisualElement>
             </Graphene.Elements.If>
             <Graphene.Elements.If binding-path="ShowCloseButton" value="true" name="If-Actions">

@@ -73,3 +73,49 @@
   border-color: rgba(255, 0, 0, 0.25);
   border-width: 2px;
 }
+
+
+.unity-button.gr-button.icon {
+  min-width: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+  margin-top: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  transition-property: -unity-background-image-tint-color;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  background-color: transparent;
+  -unity-background-image-tint-color: rgb(173, 166, 154);
+}
+.unity-button.gr-button.icon.large {
+  min-width: 64px;
+  max-width: 64px;
+  min-height: 64px;
+  max-height: 64px;
+  background-color: transparent;
+}
+
+.gr-button.icon.submit:hover{
+  -unity-background-image-tint-color: #C8FFBF;
+}
+.gr-button.icon.cancel:hover {
+  -unity-background-image-tint-color:#CC9F9F;
+}
+.gr-button.icon.gold:hover {
+  -unity-background-image-tint-color: #E5DC7C
+}
+
+.gr-button.icon:focus,
+.gr-button.icon:active {
+  -unity-background-image-tint-color: white;
+}
+/* .gr-button.icon:active {
+  -unity-background-image-tint-color: rgb(173, 166, 154);
+} */

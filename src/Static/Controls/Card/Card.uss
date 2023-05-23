@@ -11,13 +11,3 @@
 }
 
 .card.xl {}
-
-.grid {
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.grid-cell {
-  flex-grow: 1;
-  flex-basis: 0;
-}

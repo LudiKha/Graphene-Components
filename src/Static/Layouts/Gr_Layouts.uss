@@ -55,7 +55,7 @@
 }
 
 .unity-view.left .unity-scroll-view__vertical-scroller {
-  right: inherit;
+  right: auto;
   left: 0;
 }
 
@@ -71,9 +71,29 @@
 }
 
 .layout .plate__child-container.layout-column>.plate {
-  margin-top: 24px;
+  margin-top: 8px;
 }
 
 .layout.nospace .plate__child-container.layout-column>.plate {
   margin-top: 0px;
+}
+
+.unity-view .left .flex-row.reverse-left,
+.unity-view #Left .flex-row.reverse-left {
+  flex-direction: row-reverse;
+}
+
+.unity-view .right .flex-row.reverse-right,
+.unity-view #Right .flex-row.reverse-right {
+  flex-direction: row-reverse;
+}
+
+.unity-view .left .mirror-left,
+.unity-view #Left .mirror-left {
+  scale: 1 -1;
+}
+
+.unity-view .right .mirror-right,
+.unity-view #Right .mirror-right {
+  scale: -1 -1;
 }

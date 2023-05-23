@@ -12,3 +12,27 @@
 .plate.dimmer {
   background-color: rgba(0, 0, 0, 0.99);
 }
+
+.plate.f25{
+  flex-basis: 25%;
+}
+
+.plate.f33{
+  flex-basis: 33%;
+}
+
+.plate.f50{
+  flex-basis: 50%;
+}
+
+.plate.w25{
+  width: 25%;
+}
+
+.plate.w33{
+  width: 33%;
+}
+
+.plate.w50{
+  width: 50%;
+}

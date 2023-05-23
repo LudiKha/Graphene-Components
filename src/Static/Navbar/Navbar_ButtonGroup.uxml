@@ -11,7 +11,7 @@
                 <Graphene.Elements.Route route="nav" class="flex-row justify-around">
                     <Graphene.Elements.ButtonGroup items="One;Two;Three" binding-path="Routes" class="plate__content-container flex-row justify-around" />
                 </Graphene.Elements.Route>
-                <Graphene.Elements.View name="GR__Content" id="GR__Content" />
+                <Graphene.Elements.View name="Content" id="Content" />
                 <Graphene.Elements.Route route="next" class="flex-row justify-around">
                     <ui:Button focusable="true" name="Next" text="Next" class="gr-button" />
                 </Graphene.Elements.Route>

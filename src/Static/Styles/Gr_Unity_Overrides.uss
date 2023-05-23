@@ -34,7 +34,7 @@ TemplateContainer.unity-ui-document__child {
   /*align-self: center;*/
 }
 
-TemplateContainer>.unity-base-field>.unity-base-field__input {
+.unity-base-field>.unity-base-field__input {
   min-width: 100px;
   max-width: 250px;
 }
@@ -59,6 +59,10 @@ TemplateContainer>.unity-base-field>.unity-base-field__input {
 }
 
 /* Scroller */
+.unity-scroller .unity-base-slider__input {
+  min-width: 5px;
+}
+
 .unity-scroller--vertical {
   width: 10px;
 }
@@ -66,8 +70,22 @@ TemplateContainer>.unity-base-field>.unity-base-field__input {
 .unity-scroller--vertical .unity-base-slider--vertical {
   width: 10px;
   min-width: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
+.unity-scroller--horizontal {
+  height: 10px;
+}
+
+.unity-scroller--horizontal .unity-base-slider--horizontal {
+  height: 10px;
+  min-height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.unity-scroller--horizontal .unity-repeat-button,
 .unity-scroller--vertical .unity-repeat-button {
   width: 10px;
   height: 10px;

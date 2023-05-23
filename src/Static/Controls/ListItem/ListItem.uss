@@ -1,9 +1,9 @@
 .unity-ui-document__root {
-  --card-background-color: rgb(36, 34, 32);
+  --list-item-background-color: rgb(36, 34, 32);
 }
 
 :root {
-  --card-background-color: rgb(36, 34, 32);
+  --list-item-background-color: rgb(36, 34, 32);
 }
 
 .gr-list-item.unity-button {
@@ -20,4 +20,104 @@
   min-height: 40px;
   min-width: 40px;
   border-radius: 40px;
+}
+
+.gr-list-item.gr-button.card {
+  background-color: var(--list-item-background-color);
+}
+
+.gr-list-item.unity-collection-view__item {
+  min-height: auto;
+  min-width: auto;
+  height: auto;
+  width: auto;
+}
+
+.unity-list-view__empty-label {
+    display: none;
+}
+
+/* Compact Styles -> Remove Body */
+.plate.compact .gr-list-item.unity-collection-view__item .gr-list-item--title {
+  -unity-font-style: normal;
+  font-size: 12px;
+}
+.plate.compact .gr-list-item.unity-collection-view__item .gr-list-item--body {
+  display: none;
+}
+
+/* Compact Styles -> Reduce Icon */
+.plate.compact .gr-list-item.unity-collection-view__item .gr-list-item--icon {
+  max-height: 40px;
+  max-width: 40px;
+}
+
+/* List Item Icons */
+.gr-list-item .gr-list-item--icon {
+  max-height: 64px;
+  max-width: 64px;
+  width: 64px;
+  height: 64px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+/* Icon buttons */
+.unity-button.gr-button.icon,
+.unity-button.gr-button .icon {
+  min-width: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  /* padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px; */
+  padding: 4px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  transition-property: -unity-background-image-tint-color;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  background-color: transparent;
+  -unity-background-image-tint-color: rgb(173, 166, 154);
+}
+
+.unity-button.gr-button.large.icon,
+.unity-button.gr-button.large .icon,
+.unity-button.gr-button .icon.large {
+  min-width: 64px;
+  max-width: 64px;
+  min-height: 64px;
+  max-height: 64px;
+}
+
+.unity-button.gr-button.frame.icon,
+.unity-button.gr-button.frame .icon {
+  margin: 4px;
+}
+
+.gr-button.submit.icon:active,
+.gr-button.submit:active .icon {
+  -unity-background-image-tint-color: #9cc28b;
+  -unity-background-image-tint-color: #E5DC7C;
+}
+
+.gr-button.cancel.icon:active,
+.gr-button.cancel:active .icon {
+  -unity-background-image-tint-color:#CC9F9F;
+}
+
+.gr-button.gold.icon:active,
+.gr-button.gold:active .icon{
+  -unity-background-image-tint-color: #E5DC7C
+}
+
+.gr-button.icon:hover,
+.gr-button.icon:focus,
+.gr-button.icon:active,
+.gr-button:hover .icon,
+.gr-button:focus .icon,
+.gr-button:active .icon {
+  -unity-background-image-tint-color: white;
 }

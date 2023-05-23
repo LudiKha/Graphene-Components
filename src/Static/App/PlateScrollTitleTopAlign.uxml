@@ -1,13 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
-  <Style src="project://database/Packages/com.graphene.components/Static/Styles/Gr_Globals.uss?fileID=7433441132597879392&amp;guid=860e7d8be56788642a4c5148b164c1f8&amp;type=3#Gr_Globals" />
-  <ui:VisualElement name="Plate" class="plate">
-    <Graphene.Elements.If binding-path="Title" class="noshrink">
-      <ui:Label display-tooltip-when-elided="true" binding-path="Title" class="h5 gr-padding" />
-      <ui:VisualElement class="border" />
-    </Graphene.Elements.If>
-    <ui:ScrollView>
-      <Graphene.Elements.View id="Content" name="GR__Content" class="plate__content-container layout-column" style="justify-content: flex-end;" />
-      <Graphene.Elements.View id="Children" default="true" name="GR__Children" class="plate__child-container layout-column" />
-    </ui:ScrollView>
-  </ui:VisualElement>
+    <Style src="project://database/Packages/com.graphene.components/Static/Styles/Gr_Globals.uss?fileID=7433441132597879392&amp;guid=860e7d8be56788642a4c5148b164c1f8&amp;type=3#Gr_Globals" />
+    <ui:VisualElement name="Plate" class="plate">
+        <Graphene.Elements.If binding-path="Title" class="noshrink">
+            <ui:Label display-tooltip-when-elided="true" binding-path="Title" class="h6 gr-padding" />
+            <ui:VisualElement class="border" />
+        </Graphene.Elements.If>
+        <ui:ScrollView>
+            <Graphene.Elements.View id="Content" name="GR__Content" class="plate__content-container layout-column" style="justify-content: flex-end;" />
+            <Graphene.Elements.View id="Children" default="true" name="GR__Children" class="plate__child-container layout-column" />
+        </ui:ScrollView>
+    </ui:VisualElement>
 </ui:UXML>

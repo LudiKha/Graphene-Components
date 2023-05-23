@@ -14,7 +14,7 @@
         <Graphene.Elements.If binding-path="ShowContent" value="true" name="If-Content">
             <ui:VisualElement name="Border" class="border nomargin" />
             <ui:VisualElement name="Content" class="gr-padding flex-grow">
-                <Graphene.Elements.View name="GR__Children" id="GR__Children" />
+                <Graphene.Elements.View name="Children" id="Children" />
             </ui:VisualElement>
         </Graphene.Elements.If>
         <Graphene.Elements.If binding-path="HasActions" value="true" name="If-Actions">

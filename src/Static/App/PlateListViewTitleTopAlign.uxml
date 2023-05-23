@@ -2,7 +2,7 @@
     <Style src="project://database/Packages/com.graphene.components/Static/Styles/Gr_Globals.uss?fileID=7433441132597879392&amp;guid=860e7d8be56788642a4c5148b164c1f8&amp;type=3#Gr_Globals" />
     <ui:VisualElement name="Plate" class="plate">
         <Graphene.Elements.If binding-path="Title" class="noshrink">
-            <ui:Label display-tooltip-when-elided="true" binding-path="Title" class="h5 gr-padding" />
+            <ui:Label display-tooltip-when-elided="true" binding-path="Title" class="h6 gr-padding" />
             <ui:VisualElement class="border" />
         </Graphene.Elements.If>
         <ui:ListView focusable="true" binding-path="Items" />
