@@ -50,6 +50,13 @@
   max-width: 48px;
 }
 
+.unity-base-field .unity-base-slider__dragger {
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	margin-top: -6px;
+}
+
 .unity-base-field:hover,
 .unity-popup-field__input:hover,
 .gr-button:hover,

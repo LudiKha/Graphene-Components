@@ -11,10 +11,10 @@
             <ui:VisualElement name="Divider" class="vertical divider" />
             <ui:VisualElement class="justify-between flex-row flex-grow">
                 <Graphene.Elements.If binding-path="Title" name="If_Title" class="noshrink justify-center">
-                    <ui:Label display-tooltip-when-elided="true" binding-path="Title" class="h6 gr-padding nomargin" />
+                    <ui:Label display-tooltip-when-elided="true" binding-path="Title" class="h6 gr-padding nomargin nowrap" style="width: 200px;"/>
                 </Graphene.Elements.If>
                 <Graphene.Elements.If binding-path="HasContent" name="If_ButtonGroup" class="noshrink justify-center">
-                    <ui:VisualElement class="graphene-navbar__container flex-row justify-around noshrink">
+                    <ui:VisualElement class="graphene-navbar__container flex-row justify-around noshrink flex-grow align-start">
                         <Graphene.Elements.Route route="previous" class="flex-row justify-around">
                             <ui:Button focusable="true" name="Previous" text="‹" class="gr-button" />
                         </Graphene.Elements.Route>
