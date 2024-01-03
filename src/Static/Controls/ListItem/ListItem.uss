@@ -80,7 +80,9 @@
   transition-duration: 0.3s;
   transition-delay: 0s;
   background-color: transparent;
-  -unity-background-image-tint-color: rgb(173, 166, 154);
+  -unity-background-image-tint-color: rgb(65, 62, 57);
+  -unity-background-image-tint-color: rgb(223, 221, 211);
+  -unity-background-image-tint-color: rgb(179, 173, 164);
 }
 
 .unity-button.gr-button.large.icon,
@@ -110,7 +112,7 @@
 
 .gr-button.gold.icon:active,
 .gr-button.gold:active .icon{
-  -unity-background-image-tint-color: #E5DC7C
+  -unity-background-image-tint-color: #E5DC7C;
 }
 
 .gr-button.icon:hover,
@@ -119,5 +121,5 @@
 .gr-button:hover .icon,
 .gr-button:focus .icon,
 .gr-button:active .icon {
-  -unity-background-image-tint-color: white;
+  -unity-background-image-tint-color: rgb(223, 221, 211);  
 }

@@ -6,22 +6,17 @@
     padding: 8px;
 }
 
-.p16 .p-16 {
+.p16,
+.p-16 {
     padding: 16px;
 }
 
-.p8 {
-    padding: 8px;
-}
-
+.p8,
 .p-8 {
     padding: 8px;
 }
 
-.p4 {
-    padding: 4px;
-}
-
+.p4,
 .p-4 {
     padding: 4px;
 }
