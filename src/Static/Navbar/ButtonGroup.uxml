@@ -1,13 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
-  <Style src="project://database/Packages/com.graphene.components/Static/Navbar/Navbar.uss?fileID=7433441132597879392&amp;guid=997a3b559e365cc409590db6d41f1f59&amp;type=3#Navbar" />
-  <ui:VisualElement name="ButtonGroup" class="plate">
-    <ui:VisualElement name="Navbar" class="navbar graphene-navbar__content flex-row justify-between flex-grow">
-      <ui:VisualElement class="flex-row justify-around" />
-      <ui:VisualElement class="flex-row justify-around">
-        <Graphene.Elements.ButtonGroup items="One;Two;Three" binding-path="Routes" class="plate__content-container flex-row justify-around" />
-        <Graphene.Elements.View name="GR__Content" id="Content" class="flex-row justify-around" />
-      </ui:VisualElement>
-      <ui:VisualElement class="flex-row justify-around" />
+    <Style src="project://database/Packages/com.graphene.components/Static/Navbar/Navbar.uss?fileID=7433441132597879392&amp;guid=997a3b559e365cc409590db6d41f1f59&amp;type=3#Navbar" />
+    <ui:VisualElement name="ButtonGroup" class="plate">
+        <ui:VisualElement name="Navbar" class="navbar graphene-navbar__content flex-row justify-between flex-grow">
+            <ui:VisualElement class="flex-row justify-around" />
+            <ui:VisualElement class="flex-row justify-around">
+                <Graphene.Elements.ButtonGroup binding-path="Routes" class="plate__content-container flex-row justify-around" />
+                <Graphene.Elements.View name="GR__Content" id="Content" class="flex-row justify-around" />
+            </ui:VisualElement>
+            <ui:VisualElement class="flex-row justify-around" />
+        </ui:VisualElement>
     </ui:VisualElement>
-  </ui:VisualElement>
 </ui:UXML>

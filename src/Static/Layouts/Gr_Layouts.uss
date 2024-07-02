@@ -8,8 +8,6 @@
   max-width: 1024px;
 }
 
-.layout .content {}
-
 .layout2 {
   flex-grow: 1;
 }
@@ -27,12 +25,6 @@
 .layout3 {
   flex-grow: 1;
 }
-
-.layout3 .inner {}
-
-.layout3 .inner {}
-
-.layout3 .content {}
 
 .layout3 .left {
   flex-grow: 1;
@@ -96,4 +88,8 @@
 .unity-view .right .mirror-right,
 .unity-view #Right .mirror-right {
   scale: -1 -1;
+}
+
+.w33{
+  width: 33%;
 }

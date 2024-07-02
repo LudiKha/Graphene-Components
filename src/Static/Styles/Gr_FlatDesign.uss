@@ -15,12 +15,6 @@
   --panel-background-color: rgba(36, 34, 32, 1);
 }
 
-#App-container,
-.gr-app__background {
-  background-color: rgb(184, 194, 204);
-  background-image: var(--gradient);
-}
-
 .unity-popup-field__input,
 .gr-template>.unity-base-field,
 .gr-list-item.unity-button,
@@ -31,7 +25,7 @@
   border-width: 0;
   border-radius: var(--border-radius);
   min-width: 30px;
-  color: white;
+  color: var(--primary-white);
 }
 
 /* Disable text field color */
@@ -66,7 +60,7 @@
 
 .plate__content-container>*>.unity-base-field {
   margin-top: 8px;
-  color: white;
+  color: var(--primary-white);
 }
 
 .gr-cycle-field .unity-button {
@@ -86,7 +80,7 @@
 .title>.unity-text-element,
 .subtitle>.unity-text-element,
 .unity-base-field .unity-label {
-  color: white;
+  color: var(--primary-white);
 }
 
 .top .navbar {
@@ -123,7 +117,7 @@
 .top .navbar .active>.gr-button,
 .top .navbar .gr-button.active {
   background-color: var(--primary-color-transparent);
-  color: white;
+  color: var(--primary-white);
 }
 
 .unity-ui-document__root .gr-button:focus {
@@ -183,7 +177,7 @@
 }
 
 .white .unity-text-element {
-  color: white;
+  color: var(--primary-white);
 }
 
 .submit.unity-button,
@@ -215,5 +209,5 @@
 }
 
 .unity-base-field__input {
-  color: white;
+  color: var(--primary-white);
 }

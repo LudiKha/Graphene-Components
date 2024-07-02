@@ -6,19 +6,66 @@
     padding: 8px;
 }
 
-.p16,
-.p-16 {
-    padding: 16px;
+.p4 {
+    padding: 4px;
 }
-
-.p8,
-.p-8 {
+.p8 {
     padding: 8px;
 }
 
-.p4,
-.p-4 {
-    padding: 4px;
+.p16 {
+    padding: 16px;
+}
+
+.p24{
+    padding: 24px;
+}
+
+.p32{
+    padding: 32px;
+}
+
+.p48{
+    padding: 48px;
+}
+
+.p64{
+    padding: 64px;
+}
+
+.p72{
+    padding: 72px;
+}
+
+.m4 {
+    margin: 4px;
+}
+.m8 {
+    margin: 8px;
+}
+
+.m16 {
+    margin: 16px;
+}
+
+.m24{
+    margin: 24px;
+}
+
+.m32{
+    margin: 32px;
+}
+
+.m48{
+    margin: 48px;
+}
+
+.m64{
+    margin: 64px;
+}
+
+.m72{
+    margin: 72px;
 }
 
 .plate.compact .gr-padding {
@@ -73,6 +120,10 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.hide-overflow {
+    overflow: hidden;
 }
 
 .flex-wrap {
@@ -153,11 +204,6 @@
     right: 0;
 }
 
-.plate {
-    transition-property: opacity;
-    transition-duration: 0.3s;
-    transition-delay: 0s;
-}
 
 .plate.fade {
     transition-property: opacity;
@@ -167,12 +213,4 @@
 
 .plate.fadeout {
     opacity: 0;
-}
-
-.nopick {
-    picking-mode: ignore;
-}
-
-.nopick TemplateContainer {
-    picking-mode: ignore;
 }

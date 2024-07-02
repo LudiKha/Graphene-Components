@@ -1,7 +1,6 @@
 .unity-ui-document__root,
 :root {
   --ink-color: rgba(0, 0, 0, 0.6);
-  --ink-color-red: rgba(130, 10, 10, 0.7);
   --ink-color-white: rgba(240, 240, 240, 0.7);
   --font-headline: resource('Fonts/Lato-Regular');
   --font-body: resource('Fonts/Lato-Regular');

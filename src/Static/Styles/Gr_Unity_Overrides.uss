@@ -38,7 +38,7 @@ TemplateContainer.unity-ui-document__child {
 }
 
 .unity-base-field>.unity-base-field__input {
-  min-width: 100px;
+  /* min-width: 100px; */
   max-width: 250px;
 }
 
