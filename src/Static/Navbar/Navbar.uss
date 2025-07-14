@@ -44,10 +44,10 @@
   }
   
   /* Bottom Nav buttons */
-  .bottom .navbar .gr-button {
+  .bottom .navbar .unity-button {
     border-top-width: var(--border-width);
     border-top-color: transparent;
-    background-color: transparent;
+    /* background-color: transparent; */
     margin-top: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 0;

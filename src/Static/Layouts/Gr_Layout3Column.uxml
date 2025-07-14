@@ -1,10 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
     <Style src="project://database/Packages/com.graphene.components/Static/Layouts/Gr_Layouts.uss?fileID=7433441132597879392&amp;guid=ceb9cb2abe2fe724d81ff6e5e1c67827&amp;type=3#Gr_Layouts" />
-    <ui:VisualElement name="Layout" class="layout2 layout">
-        <ui:VisualElement name="Body" class="body flex-grow justify-center flex-row">
-            <Graphene.Elements.View id="Left" name="Left" default="true" class="plate__view-container layout-column flex-grow column-inner" />
-            <Graphene.Elements.View id="Center" name="Center" default="true" class="left plate__view-container layout-column flex-grow column-inner" />
-            <Graphene.Elements.View id="Right" name="Right" class="right plate__view-container layout-column flex-grow column-inner" />
-        </ui:VisualElement>
+    <ui:VisualElement name="Layout" class="plate layout layout3 flex-grow justify-between flex-row">
+        <Graphene.Elements.View id="Left" name="Left" class="left plate__view-container layout-column column-inner" />
+        <Graphene.Elements.View id="Center" name="Center" class="center plate__view-container layout-column column-inner" default="true" />
+        <Graphene.Elements.View id="Right" name="Right" class="right plate__view-container layout-column column-inner" />
     </ui:VisualElement>
 </ui:UXML>

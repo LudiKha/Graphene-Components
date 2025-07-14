@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" gr="Graphene.Elements" editor-extension-mode="False">
-  <ui:VisualElement name="Plate" class="plate absolute fill">
-    <Graphene.Elements.View name="GR__Children" id="Children" class="absolute fill" />
-  </ui:VisualElement>
+    <ui:VisualElement name="Plate" class="plate absolute fill">
+        <Graphene.Elements.View name="Children" id="Children" class="absolute fill" />
+    </ui:VisualElement>
 </ui:UXML>

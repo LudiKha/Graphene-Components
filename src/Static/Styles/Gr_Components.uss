@@ -75,7 +75,7 @@
 }
 
 
-.unity-button.gr-button.icon {
+.unity-button.gr-button.icon-button {
   min-width: 40px;
   max-width: 40px;
   max-height: 40px;

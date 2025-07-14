@@ -1,13 +1,14 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="Background" class="absolute fill align-center justify-center">
         <ui:VisualElement name="Modal" class="frame modal">
-            <Graphene.Elements.If name="If-Title" binding-path="Title" value="true" class="flew-row">
-                <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" binding-path="Title" class="h6 modal--title p16 nomargin" style="-unity-text-align: middle-center;" />
+            <Graphene.Elements.If name="If-Title" binding-path="Title" value="true" class="align-center flex-row justify-center p16">
+                <ui:Image display-tooltip-when-elided="true" name="Image" binding-path="Image" picking-mode="Ignore" class="modal--icon icon large" />
+                <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" binding-path="Title" class="h6 modal--title nomargin bold" style="-unity-text-align: middle-center;" />
             </Graphene.Elements.If>
             <Graphene.Elements.If name="If-Message" value="true" binding-path="Message">
                 <ui:VisualElement name="Border" class="border nomargin" />
                 <ui:VisualElement name="Center" class="gr-padding justify-center align-center body hide-overflow">
-                    <ui:Label text="Message" display-tooltip-when-elided="true" name="Body" binding-path="Message" class="body modal--body nomargin nopad" style="font-size: 16px; -unity-text-align: upper-center; white-space: normal;" />
+                    <ui:Label text="Message" display-tooltip-when-elided="true" name="Body" binding-path="Message" class="body modal--body nomargin nopad"/>
                 </ui:VisualElement>
             </Graphene.Elements.If>
             <Graphene.Elements.If binding-path="HasContent" value="true" name="If-Content">

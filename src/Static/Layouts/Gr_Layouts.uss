@@ -6,6 +6,8 @@
 .layout1 .inner {
   min-width: 512px;
   max-width: 1024px;
+    min-width: 50%;
+  max-width: 75%;
 }
 
 .layout2 {
@@ -28,17 +30,20 @@
 
 .layout3 .left {
   flex-grow: 1;
-  min-width: 33%;
+  /*min-width: 33%; */
+  max-width: 50%;
 }
 
 .layout3 .center {
   flex-grow: 1;
-  min-width: 33%;
+  /*min-width: 33%; */
+  max-width: 50%;
 }
 
 .layout3 .right {
   flex-grow: 1;
-  min-width: 33%;
+  /*min-width: 33%; */
+  max-width: 50%;
 }
 
 .layout3 .inner>.plate__content-container {
@@ -60,10 +65,6 @@
   max-width: 50%;
   min-width: 33%;
   flex-grow: 0;
-}
-
-.layout .plate__child-container.layout-column>.plate {
-  margin-top: 8px;
 }
 
 .layout.nospace .plate__child-container.layout-column>.plate {

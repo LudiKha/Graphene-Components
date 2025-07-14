@@ -8,9 +8,9 @@
   --font-1: resource('Fonts/Lato-Regular');
 }
 
-.unity-text-element {
+./* unity-text-element {
   -unity-font: var(--font-1);
-}
+} */
 
 :root .unity-text-element.font-deco-1 {
   -unity-font: var(--font-deco-1);

@@ -9,7 +9,7 @@
                 <Graphene.Elements.If name="If-Title" binding-path="Label" value="true" picking-mode="Ignore">
                     <ui:Label text="Label" display-tooltip-when-elided="true" name="Title" binding-path="Label" picking-mode="Ignore" class="bold nomargin nopad body gr-list-item--text gr-list-item--title" />
                 </Graphene.Elements.If>
-                <Graphene.Elements.If name="If-Description" value="true" binding-path="Description" picking-mode="Ignore">
+                <Graphene.Elements.If name="If-Description" value="false" binding-path="Description" picking-mode="Ignore">
                     <ui:Label text="Description" display-tooltip-when-elided="true" name="Body" binding-path="Description" picking-mode="Ignore" class="caption nomargin nopad gr-list-item--text gr-list-item--body" />
                 </Graphene.Elements.If>
             </ui:VisualElement>

@@ -204,13 +204,18 @@
     right: 0;
 }
 
+.gr-root.fade {
+    transition-duration: 0.5s;
+}
 
+.fade,
 .plate.fade {
     transition-property: opacity;
     transition-duration: 0.3s;
     transition-delay: 0s;
 }
 
+.fadeout,
 .plate.fadeout {
     opacity: 0;
 }

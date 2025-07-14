@@ -41,6 +41,10 @@ TemplateContainer.unity-ui-document__child {
   /* min-width: 100px; */
   max-width: 250px;
 }
+/* Negate unity */
+.unity-scroller > .unity-base-field > .unity-base-field__input {
+  max-width: auto;
+}
 
 .unity-base-field {
   justify-content: space-between;
@@ -92,4 +96,9 @@ TemplateContainer.unity-ui-document__child {
 .unity-scroller--vertical .unity-repeat-button {
   width: 10px;
   height: 10px;
+}
+
+.gr-cycle-field .unity-button {
+  font-weight: bold;
+  font-size: 18px;
 }

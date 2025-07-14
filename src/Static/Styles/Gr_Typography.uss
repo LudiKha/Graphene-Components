@@ -58,7 +58,7 @@
 .gr-button,
 .gr-button .gr-text-element {
   -unity-font: var(--font-body);
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 
 .caption {
@@ -73,4 +73,10 @@
 
 .bold {
   -unity-font-style: bold;
+}
+
+.muted {
+  color: #979797;
+  color: #978e89;
+  color: #979389;
 }
